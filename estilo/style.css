@@ -1,0 +1,227 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: bebas;
+    src: url(../fontes/bebas.ttf) format('truetype');     
+}
+
+@font-face {
+    font-family: idroid;
+    src: url(../fontes/idroid.otf) format('opentype');
+}
+
+@font-face {
+    font-family: opensans;
+    src: url(../fontes/opensans.ttf) format('truetype');
+}
+
+:root {
+    --cor01:#35EE7F;
+    --cor02: #bffad7;
+    --cor03: #00A140;
+    --cor04: #0f6b32;
+    --cor05: #1c6647;
+    --cor06: rgb(248, 235, 205);
+
+    --fonte-padrao: 'opensans', Arial, helvetica, sans-serif;
+    --fonte-destaque: 'bebas';
+    --fonte-android: 'idroid';    
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body {
+    background-color: var(--cor06);
+    margin: 0px;  
+    font-family:var(--fonte-padrao);    
+    color: black;
+              
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor03), var(--cor05));
+    text-align: justify;
+    height: 150px;        
+    margin: 0px;  
+    padding: 25px 15px 25px 15px;      
+}
+
+header h1 {
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    color: white;
+    padding: 15px 0px 10px 0px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+}
+
+header p {   
+    text-align: center;    
+    color: white;   
+    padding-top: 10px; 
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+    padding-bottom: 30px;
+    
+}
+
+nav {    
+    background-color: var(--cor05);    
+    text-align: right;    
+    padding: 20px 5px 5px 15px;
+    font-family: var(--fonte-destaque);
+    font-size: 1.2em;    
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.349);
+    padding-top: 40px;
+    
+}
+
+nav a {    
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.377);
+    text-decoration: none;   
+    color: rgb(247, 198, 138);
+    margin: 5px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    text-shadow: none;    
+    background-color: var(--cor02);
+    color: var(--cor04);
+    transition-duration: .6s;
+}
+
+main img{
+    width: 100%;
+}
+
+main {
+    background-color: white;
+    margin: auto;
+    text-align: justify;
+    padding: 10px;   
+
+    max-width: 800px; 
+    min-width: 280px;
+    width: auto;
+
+    box-shadow: 0px 0px 15px rgb(104, 104, 104);
+}
+
+a.externo {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #06ce5679;
+    color: black;
+
+    border-radius: 5px;
+    padding: 0px 5px;    
+}
+
+a.externo:hover{
+    background-color: var(--cor04); 
+    color: white;   
+    transition-duration: 0.6s;
+
+}
+
+a.externo::after {
+   content: '\00A0\1F517';
+}
+
+main h1 {
+    
+    color: var(--cor04);
+    font-family: var(--fonte-android);
+    margin-bottom: 5px;
+    padding-left: 8px;
+}
+
+main h2 {
+    background-image: linear-gradient(to right, var(--cor02), transparent);
+    color: var(--cor04);
+    font-family: var(--fonte-android);
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 8px;
+    
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main p {
+    text-indent: 25px;
+    margin-bottom: 10px;
+    line-height: 1.7em;
+    font-size: 1.1em;    
+}
+
+div.video{     
+    background-color: var(--cor04); 
+    margin: 0px -10px 30px -10px; 
+    padding: 20px;
+    padding-bottom: 45%;
+    position: relative;  
+ }
+
+ div iframe{
+     position: absolute;
+     top: 5% ;
+     left: 12.7%;
+     width: 74.2% ;
+     height: 90%;
+ }
+
+aside h3 {
+    background-color: var(--cor03);
+    font-family: var(--fonte-padrao);
+    color: white;
+    font-size: 1em;
+
+    margin: -15px -12px 10px -12px;
+    padding: 10px 0px 10px 10px;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+aside {
+    background-color: var(--cor02);
+    padding: 15px 12px 20px 12px;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 10px;
+
+    box-shadow: 0px 0px 10px  rgb(104, 104, 104);
+
+}
+
+aside ul{
+    columns: 2;
+    list-style-type: '\2714\00A0\00A0';
+}
+
+ul{
+    padding: 5px 0px 15px 30px;
+}
+
+footer {    
+    background-color: #2a8550;
+    border-color: #2a8550;
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+
+
+    height: 5px;
+    padding: 8px 5px 23px 5px;
+    margin: 15px 0px 0px 0px; 
+    
+    
+}
